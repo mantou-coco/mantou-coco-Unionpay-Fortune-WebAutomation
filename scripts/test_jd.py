@@ -1,7 +1,8 @@
-from selenium import webdriver
+from selenium import  webdriver
 from page.page import Page
 from time import sleep
 import pytest
+import allure
 
 
 
@@ -19,6 +20,8 @@ class Test_Jd:
         sleep(3)
         self.driver.quit()
 
+    @allure.title("添加购物车")
+    @allure.description("添加商品至购物车")
     def test_add_cart(self):
         self.page.Baiduhome.input_search("京东")
         self.page.Baiduhome.click_search()
