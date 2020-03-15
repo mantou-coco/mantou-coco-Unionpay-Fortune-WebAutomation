@@ -10,7 +10,7 @@ class Resbaidu(BaseAction):
 
     @allure.step(title="点击'京东'")
     def click_jd(self):
-        self.click(self.jd_button, 10, 1)
+        self.click(self.jd_button)
 
 
 

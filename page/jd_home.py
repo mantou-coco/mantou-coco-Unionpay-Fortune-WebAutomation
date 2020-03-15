@@ -4,7 +4,7 @@ import allure
 
 
 class Jdhome(BaseAction):
-    search_edit_text_jd = By.ID, "key"
+    search_edit_text_jd = By.XPATH, "//*[@id='key']"
     search_button_jd = By.CLASS_NAME, "button"
 
     @allure.step(title="搜索框输入物品")

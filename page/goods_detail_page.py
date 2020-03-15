@@ -10,9 +10,3 @@ class GoodsDetailPage(BaseAction):
     @allure.step(title="添加商品至购物车")
     def click_add_shop_cart(self):
         self.click(self.res_label)
-
-    def click_add_subscribe(self):
-        self.click(self.res_subscribe)
-
-    def switch_page(self):
-        self.get_page()
