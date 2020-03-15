@@ -3,8 +3,6 @@ from page.page import Page
 from time import sleep
 import pytest
 import allure
-import time
-import sys
 
 
 class Test_Jd:
